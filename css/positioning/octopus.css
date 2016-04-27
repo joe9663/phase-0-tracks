@@ -1,3 +1,8 @@
 div.octopus	{position: relative;
-top: 100px;
+top: 55px;
+left: 30px;
+}
+div.hat {position: relative;
+top: -350px;
+left: 10px;
 }
