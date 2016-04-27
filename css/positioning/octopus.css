@@ -1,8 +1,18 @@
 div.octopus	{position: relative;
 top: 55px;
 left: 30px;
+margin: auto;
+width: 25%;
 }
 div.hat {position: relative;
 top: -350px;
 left: 10px;
+margin: auto;
+width: 25%;
+}
+div.glasses {position: relative;
+margin: auto;
+width: 25%;
+top: -137px;
+left: 72px;
 }
