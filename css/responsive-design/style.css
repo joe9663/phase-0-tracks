@@ -30,3 +30,50 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+body {
+  max-width: 960px;
+  margin-right: 10%;
+  margin-left: 10%
+}
+
+#external-links {
+  width: 20%;
+  display: inline-block;
+  vertical-align: text-top;
+  padding: 10px;
+ 
+}
+
+.m1 {
+  position: relative;
+  width: 70%;
+  display: inline-block;
+  vertical-align: text-top;
+  padding: 10px;
+  align-self: center;
+  float: right;
+
+  
+}
+
+@media screen and (max-width: 500px) {
+  .m1 {
+    font-size: 0.7em;
+    z-index: 1;
+    display: inline;
+  }
+
+  #external-links {
+    display: inline;
+    z-index: -1;
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .m1 {
+    font-size: 1.3em;
+  }
+}
+
