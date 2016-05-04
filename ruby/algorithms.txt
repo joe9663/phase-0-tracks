@@ -1,0 +1,39 @@
+Elevator Algorithm
+
+-Walk until you reach a wall.
+	-Push every button you see on the wall until one lights up.
+	-If none of the buttons light up, or there are no buttons on the wall, find a new wall and walk until you reach it.
+	-If one of the buttons lights up then wait for the elevator to arrive.
+-When the elevator arrives a door will open. Go through that door.
+	-Inside the elevator on one of the walls there will be a panel with more buttons on it.  Walk up to that panel.
+	-Find the button on the panel labeled "5" and push it (This is the button that corresponds to the floor where you live).
+		-The button will light up and the doors will close.
+		-If it does not then that means something is wrong with that elevator. Exit the elevator through the same door you entered and begin your search for a working elevator from the beginning.
+-Once the elevator starts moving wait until it stops moving and the doors open.
+	-If the "5" button is still lit then continue to wait on the elevator until the doors open again.
+	-If the "5" button is no longer lit then that means you have reached your floor. Exit the elevator and look for your room.
+
+Making your morning toast
+
+-Walk down the stairs to kitchen.
+-Enter the kitchen and look on the counters for the bread box.
+-Open the bread box and take out a loaf of bread.
+-Open the bag containing the bread.
+	-Remoce one slice of bread from the bag if you are not that hungry.
+	-Remove two slices from the bag if you are moderately hungry.
+	-Remove three slices from the bag if you are very hungry.
+-Take your slices of bread to the toaster located on the counter behind you.
+-Open the door to the toaster and place the slices of bread inside.
+	-If you want the bread to toast evenly then make sure none of the slices are touching when you place them inside.
+	-If you do not care about toast quality then arrange the slices inside the toaster like a barbarian.
+-Once the slices of bread have been placed in the toaster close the door.
+-Check the temperature knob on the right of the toaster.
+	-If the indicator on the knob is already pointed at the toast setting continue to the next step.
+	-If the knob is on anything other than toast, rotate clockwise until the indicator on the knob points to toast setting.
+-Turn the other knob on the toaster to the desired doneness of your toast.
+	-Smaller numbers will produce a lighter colored toast and larger numbers will produce a darker colored toast.
+	-The timer on the toaster will start clicking to let you know it is on.
+-Wait until the timer stops clicking and you hear something that sounds like a bell. This means your bread has magically transformed into toast.
+-Open the door of the toaster.
+-Remove your toast from the toaster and place on a plate.
+-Put desired toppings on your toast and enjoy.
