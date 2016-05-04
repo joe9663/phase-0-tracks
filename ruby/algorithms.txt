@@ -1,0 +1,14 @@
+Elevator Algorithm
+
+-Walk until you reach a wall.
+	-Push every button you see on the wall until one lights up.
+	-If none of the buttons light up, or there are no buttons on the wall, find a new wall and walk until you reach it.
+	-If one of the buttons lights up then wait for the elevator to arrive.
+-When the elevator arrives a door will open. Go through that door.
+	-Inside the elevator on one of the walls there will be a panel with more buttons on it.  Walk up to that panel.
+	-Find the button on the panel labeled "5" and push it (This is the button that corresponds to the floor where you live).
+		-The button will light up and the doors will close.
+		-If it does not then that means something is wrong with that elevator. Exit the elevator through the same door you entered and begin your search for a working elevator from the beginning.
+-Once the elevator starts moving wait until it stops moving and the doors open.
+	-If the "5" button is still lit then continue to wait on the elevator until the doors open again.
+	-If the "5" button is no longer lit then that means you have reached your floor. Exit the elevator and look for your room.
