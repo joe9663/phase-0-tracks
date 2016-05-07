@@ -12,6 +12,16 @@ while count<employee_count
 	garlic= gets.chomp.to_s
 	puts "Would you like to enroll in the company's health insurance? (y/n)"
 	insurance= gets.chomp.to_s
+	puts "Please list any allergies you might have. Enter them one at a time please. Type done when you are finsihed."
+	allergies= gets.chomp.to_s
+	while allergies != "sunshine" and allergies != "done"
+		puts "Do you have any more allergies? Type done when finished."
+		allergies= gets.chomp.to_s
+	end
+	if allergies== "sunshine"
+		puts "Probably a vampire."
+	else puts "Thanks for your input!"
+	end
 	count+=1
 	if (age== 2016-year) && (garlic== "y" || insurance== "y")==true 
 		puts "Probably not a vampire."
