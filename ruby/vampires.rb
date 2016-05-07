@@ -20,6 +20,8 @@ while count<employee_count
 	end
 	if allergies== "sunshine"
 		puts "Probably a vampire."
+		count +=1
+		next
 	else puts "Thanks for your input!"
 	end
 	count+=1
@@ -34,3 +36,5 @@ while count<employee_count
 	else puts "Results inconclusive."
 	end
 end
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+break
