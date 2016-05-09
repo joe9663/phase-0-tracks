@@ -1,3 +1,5 @@
+#METHODS
+
 #Define encrypt method that indexes every letter in the password.
 #Runs the .next function on each letter.
 def encrypt(password)
@@ -36,3 +38,26 @@ def decrypt(password)
 		end
 	end
 end
+
+#DRIVE CODE
+
+decrypt(encrypt("swordfish"))
+#Asks user what the program will do
+puts "Would you like to encrypt or decrypt a password?"
+	response=gets.chomp
+until response== "encrypt" or response== "decrypt"
+	puts "I did not understand you, what was that again?"
+	response=gets.chomp
+end
+#Call appropriate method based on response
+if response== "encrypt"
+	puts "What password are we encrypting?"
+	password=gets.chomp
+	print encrypt(password)
+elsif response== "decrypt"
+	puts "What password are we decrypting?"
+	password=gets.chomp
+	print decrypt(password)
+else puts "Error"
+end
+exit
