@@ -17,11 +17,13 @@ end
 #Decrypt runs reverse of the next function.
 
 def decrypt(password)
-	alphabet="abcdefghijklmnopqrstuvwxyz"
+	alphabet="abcdefghijklmnopqrstuvwxyz "
 	count=0
 	while count<password.length
 		magic= alphabet.index(password[count])
-		if alphabet[magic -1]== "a"
+		if magic== " "
+			print " "
+		elsif alphabet[magic -1]== "a"
 			print "z"
 		else print alphabet[magic -1]
 		count +=1
