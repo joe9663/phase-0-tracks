@@ -50,7 +50,7 @@ def decrypt(password)
 end
 
 #DRIVE CODE
-decrypt(encrypt("swordfish"))
+puts decrypt(encrypt("swordfish"))
 #Asks user what the program will do
 puts "Would you like to encrypt or decrypt a password?"
 	response=gets.chomp
@@ -62,10 +62,10 @@ end
 if response== "encrypt"
 	puts "What password are we encrypting?"
 	password=gets.chomp
-	encrypt(password)
+	puts encrypt(password)
 elsif response== "decrypt"
 	puts "What password are we decrypting?"
 	password=gets.chomp
-	decrypt(password)
+	puts decrypt(password)
 else puts "Error"
 end
