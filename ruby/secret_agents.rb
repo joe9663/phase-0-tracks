@@ -8,13 +8,13 @@ def encrypt(password)
     while count<password.length
 # Allows the encrypt method to account for blank spaces
        if password[count]== " "
-       print " "
+       #print " "
        encoded=encoded + " "
 #Edge case for when "z" would return aa       
        elsif password[count]== "z"
-       	print "a"
+       	#print "a"
        encoded=endoded + "a"
-       else print password[count].next
+       else #print password[count].next
        encoded=encoded + password[count].next
        end
         count +=1
@@ -35,13 +35,13 @@ def decrypt(password)
 		magic= alphabet.index(password[count])
 		if magic== " "
 			decoded=decoded + " "
-			print " "
+			#print " "
 #Edge case for when decrypting "a" would not return a usable value
 		elsif alphabet[magic-1]== "a"
 			decoded=decoded + "z"
-			print "z"
+			#print "z"
 #Rolls back each letter to the previous one in the alphabet
-		else print alphabet[magic -1]
+		else #print alphabet[magic -1]
 			decoded=decoded + alphabet[magic-1]
 		end
 		count+=1
