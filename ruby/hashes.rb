@@ -16,6 +16,7 @@ puts "How many children does the client have?"
 puts "What is their preferred decor theme?"
   client_data[:decor] = gets.chomp.to_s.capitalize
 #Curtains preference converts to boolean.
+#Use if/else statement to evaluate string for boolean.
 puts "Does the client want curtains on the windows?"
   curtains = gets.chomp.to_s
   if curtains == "yes"
@@ -25,4 +26,5 @@ puts "Does the client want curtains on the windows?"
   else
   	client_data[:curtains] = nil
   end
+#Prints the modified has for the user to see.
 p client_data
