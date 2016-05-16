@@ -9,7 +9,8 @@ def swap(name)
 	name.downcase.split.reverse
 end
 
-#
+#LETTER CHANGER
+#Maintain consistency of vowels and make sure consonants do not turn into vowels themselves.
 def next_letter(name)
 	name.join.split('').map! {|letter|
 		case
@@ -37,3 +38,12 @@ def next_letter(name)
 		end
 	}
 end
+#Users interface for alias scrambler.
+#Allow for input until quit is supplied.
+until continue == "quit" or nil
+puts "Welcome to Alias Manager Version.007"
+puts "Please type agent name."
+	agent_name= gets.chomp
+	p next_letter(swap(agent_name))
+puts "Would you like to add more names or quit?"
+	continue = gets.chomp
