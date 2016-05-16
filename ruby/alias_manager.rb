@@ -40,10 +40,17 @@ def next_letter(name)
 end
 #Users interface for alias scrambler.
 #Allow for input until quit is supplied.
-until continue == "quit" or nil
+#Create a blank array to store alias in.
+alias_bank = {}
+continue = ""
+unless continue == "quit" or nil
 puts "Welcome to Alias Manager Version.007"
 puts "Please type agent name."
 	agent_name= gets.chomp
-	p next_letter(swap(agent_name))
+	p next_letter(swap(agent_name)).join.capitalize
+	alias_bank[agent_name]=next_letter(swap(agent_name)).join.capitalize
 puts "Would you like to add more names or quit?"
 	continue = gets.chomp
+end
+
+alias_bank.each {|agent, codename| p "#{codename} is really known as #{agent}."}
