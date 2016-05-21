@@ -21,7 +21,12 @@ class Puppy
   def hungry?
     return true
   end
+  
+  def initialize
+    puts "Initializing new puppy instance..."
+  end
 end
+
 
 spot = Puppy.new
 spot.fetch("bone")
