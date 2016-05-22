@@ -1,4 +1,7 @@
 class Santa
+	attr_reader :ethnicity
+	attr_accessor :age, :gender, :reindeer_ranking
+
 	def initialize(gender, ethnicity)
 		puts "Initializing Santa instance ..."
 		@gender = gender
@@ -23,16 +26,6 @@ class Santa
 		@reindeer_ranking.insert(-1, reindeer)
 		p @reindeer_ranking
 	end
-	def gender_bender=(gender)
-		@gender = gender
-	end
-	#Getter Methods for Santa class
-	def age
-		@age
-	end
-	def ethnicity
-		@ethnicity
-	end
 end
 
 #kringle = Santa.new
@@ -46,7 +39,7 @@ example_genders.length.times do |i|
   santas << Santa.new(example_genders[i], example_ethnicities[i])
   end
 
-p santas[1].gender_bender=("male")
+p santas[1].gender=("male")
 p santas[1].celebrate_birthday
 p santas[1].get_mad_at= "Vixen"
 p santas[1].age
