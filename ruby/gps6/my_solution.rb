@@ -63,3 +63,13 @@ STATE_DATA.each {|state, population|
   state = VirusPredictor.new(state, STATE_DATA[state][:population_density], STATE_DATA[state][:population])
   state.virus_effects
   }
+
+# REFLECTION
+ # One part of the hash uses the hash rocket to create key/value pairs.
+ # The other part uses the : to create the pairs.
+ # Require_relative loads up a file in the same directory for the code to use.
+ # Require loads up another part of the same file.
+ # .each, .map. and .map! are ways to iterate through a hash.
+ # During the refactoring we found that instance variables were used almost exlcusively in the methods.
+ # This meant the we did not have to have any parameters in our methods since the variables were accessible without them.
+ # Refactoring was the one concept that I improved on drastically in this challenge.
