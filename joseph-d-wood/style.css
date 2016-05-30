@@ -4,3 +4,5 @@ h2 {font-family: "Helvetica";
 color: color: "DarkOrange";}
 p {font-family: "Helvetica"}
 body {background-color: "DarkSlateGray"}
+#intro {border-width: 5px;}
+.support { border-width: 3px;}
