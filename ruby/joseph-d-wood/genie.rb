@@ -43,6 +43,11 @@ class Genie
 			end
 		}
 	end
+# First you would have to iterate through all of the wish keys within the hash and convert each string to an array.
+# Once the wishes are each split into arrays, then you can check for vowels in each word.
+# Each time a vowel is found in a word the counter for that word increases.
+# The word and its vowel count integer is then added to a hash to record each wish/vowel pair.
+# Then print the wish that is associated with the highest integer value in that hash.	
 end
 # Driver code
 test = Genie.new("Joe", 28)
