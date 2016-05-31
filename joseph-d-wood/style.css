@@ -1,0 +1,31 @@
+h1 {font-family: "Helvetica";
+color: DarkOrange;
+}
+h2 {font-family: "Helvetica";
+color: DarkOrange;
+}
+p {font-family: "Helvetica";
+}
+body {background-color: DarkSlateGray;
+margin-left: 5%;
+margin-right: 5%;
+}
+#intro {border-width: 5px;
+border-style: dotted;
+}
+.support { border-width: 3px;
+border-style: dotted;
+}
+div {position: absolute;
+top: 10px;
+right: 10px;
+}
+.main {width: 60%;
+display: inline-block;
+vertical-align: top;
+}
+.sidebar {width: 20%;
+display: inline-block;
+vertical-align: text-top;
+float: right;
+}
