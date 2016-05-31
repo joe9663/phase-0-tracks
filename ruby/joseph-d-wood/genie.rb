@@ -46,14 +46,30 @@ class Genie
 # The word and its vowel count integer is then added to a hash to record each wish/vowel pair.
 # Then print the wish that is associated with the highest integer value in that hash.	
 end
+
+puts "You have found a genie."
+puts "What did they say their name was?"
+	name = gets.chomp
+puts "How old did the genie say they were?"
+	age = gets.chomp.to_i
+	new_genie= Genie.new(name, age)
+	new_genie.appear
+puts "What is your first wish?"
+	wish = gets.chomp
+	new_genie.grant_wish(wish)
+	until new_genie.grant_wish(wish) == false
+		puts "What is your next wish?"
+		wish = gets.chomp
+	end
+puts "You have used all of your wishes, goodbye!" 
 # Driver code
-test = Genie.new("Joe", 28)
+#test = Genie.new("Joe", 28)
 
-test.appear
+#test.appear
 
-test.grant_wish("dog")
-test.grant_wish("pony")
-test.grant_wish("train set")
-test.grant_wish("helicopter")
+#test.grant_wish("dog")
+#test.grant_wish("pony")
+#test.grant_wish("train set")
+#test.grant_wish("helicopter")
 
-test.display_wish_history
+#test.display_wish_history
