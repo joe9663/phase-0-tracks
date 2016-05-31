@@ -33,11 +33,25 @@ class Genie
 		else
 		end			
 	end
+# Method iterates through the wish hash
+	def display_wish_history
+		@submitted_wishes.each {|wish, granted|
+			if granted == true
+				puts "The wish of #{wish} was granted."
+			else
+				puts "The wish of #{wish} was denied."
+			end
+		}
+	end
 end
 # Driver code
 test = Genie.new("Joe", 28)
+
+test.appear
 
 test.grant_wish("dog")
 test.grant_wish("pony")
 test.grant_wish("train set")
 test.grant_wish("helicopter")
+
+test.display_wish_history
