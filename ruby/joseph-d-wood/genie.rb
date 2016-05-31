@@ -40,6 +40,10 @@ class Genie
 			puts "The wish of #{wish} was denied." if granted == false
 		}
 	end
+
+	def vanish
+		puts "*POOF!* The Genie #{@name} vanished in a puff of smoke!"
+	end
 # First you would have to iterate through all of the wish keys within the hash and convert each string to an array.
 # Once the wishes are each split into arrays, then you can check for vowels in each word.
 # Each time a vowel is found in a word the counter for that word increases.
@@ -61,7 +65,8 @@ puts "What is your first wish?"
 		puts "What is your next wish?"
 		wish = gets.chomp
 	end
-puts "You have used all of your wishes, goodbye!" 
+puts "You have used all of your wishes, goodbye!"
+new_genie.vanish 
 # Driver code
 #test = Genie.new("Joe", 28)
 
