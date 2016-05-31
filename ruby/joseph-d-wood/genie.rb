@@ -36,11 +36,8 @@ class Genie
 # Method iterates through the wish hash
 	def display_wish_history
 		@submitted_wishes.each {|wish, granted|
-			if granted == true
-				puts "The wish of #{wish} was granted."
-			else
-				puts "The wish of #{wish} was denied."
-			end
+			puts "The wish of #{wish} was granted." if granted == true
+			puts "The wish of #{wish} was denied." if granted == false
 		}
 	end
 # First you would have to iterate through all of the wish keys within the hash and convert each string to an array.
