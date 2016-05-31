@@ -8,6 +8,7 @@ class Genie
 	def initialize(name, age)
 		@name = name
 		@age = age
+		@submitted_wishes = {}
 	end
 # Instance method that allows the genie to state their name.
 # This method also informs the user that they have 3 wishes.
