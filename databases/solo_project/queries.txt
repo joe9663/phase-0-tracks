@@ -7,3 +7,14 @@
 5|James|19|4|false
 6|Larry|27|2|true
 
+2. update players set injured="false" where name="Larry";
+
+3. select players.name, players.number, positions.position, players.injured from players join positions on players.position_id = positions.id;
+
+Joe|5|Point Guard|false
+Ben|12|Center|false
+Matt|9|Small Forward|false
+Sean|22|Shooting Guard|false
+James|19|Power Forward|false
+Larry|27|Shooting Guard|false
+
