@@ -26,3 +26,5 @@ Matt|Small Forward
 Sean|Shooting Guard
 James|Power Forward
 Larry|Shooting Guard
+
+5. delete from players where name="Larry";
