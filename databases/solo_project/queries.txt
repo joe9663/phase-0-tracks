@@ -1,0 +1,46 @@
+1. select * from players
+
+1|Joe|5|1|false
+2|Ben|12|5|false
+3|Matt|9|3|false
+4|Sean|22|2|false
+5|James|19|4|false
+6|Larry|27|2|true
+
+2. update players set injured="false" where name="Larry";
+
+3. select players.name, players.number, positions.position, players.injured from players join positions on players.position_id = positions.id;
+
+Joe|5|Point Guard|false
+Ben|12|Center|false
+Matt|9|Small Forward|false
+Sean|22|Shooting Guard|false
+James|19|Power Forward|false
+Larry|27|Shooting Guard|false
+
+4. select players.name, positions.position from players join positions on players.position_id = positions.id;
+
+Joe|Point Guard
+Ben|Center
+Matt|Small Forward
+Sean|Shooting Guard
+James|Power Forward
+Larry|Shooting Guard
+
+5. delete from players where name="Larry";
+
+6.  select name from players left join positions on players.name=positions.position;
+
+Joe
+Ben
+Matt
+Sean
+James
+
+7. select position_id from players left join positions on players.position_id=positions.position;
+
+1
+5
+3
+2
+4
