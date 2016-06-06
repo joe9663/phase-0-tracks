@@ -39,6 +39,10 @@ until response == "no"
 end
 
 # starts loop for updating sandwiches
+# asks user if they would like to make any edits to sandwich ratings.
+puts "Did you want to change the rating of a sandwich?"
+	update_response = gets.chomp.downcase
+
 until update_response == "no"
 
 	puts "Which sandwich's rating are we updating?"
@@ -62,7 +66,3 @@ best_sandwiches = <<-SQL
 db.execute(best_sandwiches).each {|sandwich, rating|
 	puts "#{sandwich['name']}"
 }
-
-# asks user if they would like to make any edits to sandwich ratings.
-puts "Did you want to change the rating of a sandwich?"
-	update_response = gets.chomp.downcase
