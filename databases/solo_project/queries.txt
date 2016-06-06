@@ -1,0 +1,9 @@
+1. select * from players
+
+1|Joe|5|1|false
+2|Ben|12|5|false
+3|Matt|9|3|false
+4|Sean|22|2|false
+5|James|19|4|false
+6|Larry|27|2|true
+
