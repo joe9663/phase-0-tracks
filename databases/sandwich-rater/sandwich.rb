@@ -18,3 +18,11 @@ SQL
 
 # creates sandwich table if it does not already exist
 db.execute(create_sandwich_table)
+
+# asks the user what sandwich they would like to add and what their rating of it is
+puts "What is the sandwich you would like to add?"
+	sandwich_name = gets.chomp
+puts "How many stars out of 5 would you give this sandwich?"
+	sandwich_rating = gets.chomp.to_i
+
+	db.execute("INSERT INTO sandwiches (name, rating) VALUES (?, ?)", [sandwich_name, sandwich_rating])
