@@ -28,3 +28,19 @@ James|Power Forward
 Larry|Shooting Guard
 
 5. delete from players where name="Larry";
+
+6.  select name from players left join positions on players.name=positions.position;
+
+Joe
+Ben
+Matt
+Sean
+James
+
+7. select position_id from players left join positions on players.position_id=positions.position;
+
+1
+5
+3
+2
+4
