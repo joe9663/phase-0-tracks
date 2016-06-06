@@ -18,3 +18,11 @@ Sean|22|Shooting Guard|false
 James|19|Power Forward|false
 Larry|27|Shooting Guard|false
 
+4. select players.name, positions.position from players join positions on players.position_id = positions.id;
+
+Joe|Point Guard
+Ben|Center
+Matt|Small Forward
+Sean|Shooting Guard
+James|Power Forward
+Larry|Shooting Guard
