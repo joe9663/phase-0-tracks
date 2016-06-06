@@ -38,11 +38,31 @@ until response == "no"
 
 end
 
+# starts loop for updating sandwiches
+until update_response == "no"
+
+	puts "Which sandwich's rating are we updating?"
+		sandwich_update = gets.chomp
+
+	puts "What is the new rating?"
+		rating_update = gets.chomp.to_i
+		db.execute("UPDATE sandwiches SET rating=? WHERE name=?", [rating_update, sandwich_update])
+
+	puts "Did you want to change the rating of a sandwich?"
+	update_response = gets.chomp.downcase
+
+end
+
 # outputs the highest rated sandwiches
 puts "According to our records these are the best sandwiches. Consider making yourself one soon."
+
 best_sandwiches = <<-SQL
 						SELECT name FROM sandwiches WHERE rating="5"
 					SQL
 db.execute(best_sandwiches).each {|sandwich, rating|
 	puts "#{sandwich['name']}"
 }
+
+# asks user if they would like to make any edits to sandwich ratings.
+puts "Did you want to change the rating of a sandwich?"
+	update_response = gets.chomp.downcase
