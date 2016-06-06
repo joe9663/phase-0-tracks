@@ -1,0 +1,13 @@
+RELEASE 2
+
+2 + 3.
+
+JOIN MULTIPLE TABLES BY USING MULTIPLE JOIN COMMANDS PER SELECT COMMAND. 
+
+
+sqlite> SELECT reviews.stars, reviews.comment, users.first_name, users.last_name, businesses.name FROM reviews JOIN users ON reviews.user_id= users.id JOIN businesses ON reviews.business_id= businesses.id;
+
+4.
+addition of WHERE conditional at end of JOIN command used above^.
+
+sqlite> SELECT reviews.stars, reviews.comment, users.first_name, users.last_name, businesses.name FROM reviews JOIN users ON reviews.user_id= users.id JOIN businesses ON reviews.business_id= businesses.id WHERE business_id=4;
