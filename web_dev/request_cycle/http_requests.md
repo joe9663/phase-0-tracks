@@ -16,3 +16,9 @@
 13. 501 Not Implemented
 14. 503 Service Unavailable
 15. 550 Permission Denied
+----
+## GET and POST Requests
+A GET request retrieves information from a specified source. A POST request submits data to be processed to a specified source. GET is used for downloading and POST is used for uploading.
+----
+## Cookies
+Cookies are small pieces of data that are downloaded into the browser to record information that the user has entered in. Cookies are usually placed in the header of HTTP requests.
