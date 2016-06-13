@@ -25,3 +25,9 @@ post '/students' do
 end
 
 # add static resources
+
+# adds delete function to remove students from the database.
+ post '/students' do
+ 	db.execute("DELETE FROM students (name) VALUES (?)", [params['name']])
+ 	redirect '/'
+ end
