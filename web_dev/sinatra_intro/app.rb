@@ -54,3 +54,9 @@ get '/great_job/' do
   else "Good job!"
   end
 end
+
+get ':num1/plus/:num2' do 
+  first_number = params[:num1].to_i
+  second_number = params[:num2].to_i
+  new_number = first_number + second_number
+end
