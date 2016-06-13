@@ -48,3 +48,9 @@ end
 get '/contact' do
   "1234 Main Street"
 end
+
+get '/great_job/' do
+  if "Good job #{params[:person_name]}!"
+  else "Good job!"
+  end
+end
